@@ -55,11 +55,6 @@ done
 # ─── SURVIVAL ───
 log "=== SURVIVAL ==="
 for url in \
-  "https://download.kiwix.org/zim/videos/canadian_prepper_winterprepping_en_2025-11.zim" \
-  "https://download.kiwix.org/zim/videos/canadian_prepper_bugoutroll_en_2025-08.zim" \
-  "https://download.kiwix.org/zim/videos/canadian_prepper_bugoutconcepts_en_2025-11.zim" \
-  "https://download.kiwix.org/zim/videos/urban-prepper_en_all_2025-11.zim" \
-  "https://download.kiwix.org/zim/videos/canadian_prepper_preppingfood_en_2025-09.zim" \
   "https://download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-u_2026-03.zim"; do
   ((TOTAL++))
   download "$url" "$BASE_DIR/survival" || ((FAILED++))
@@ -68,7 +63,6 @@ done
 # ─── EDUCATION ───
 log "=== EDUCATION ==="
 for url in \
-  "https://download.kiwix.org/zim/wikibooks/wikibooks_en_all_nopic_2025-10.zim" \
   "https://download.kiwix.org/zim/ted/ted_mul_ted-ed_2025-07.zim" \
   "https://download.kiwix.org/zim/wikiversity/wikiversity_en_all_maxi_2025-11.zim" \
   "https://download.kiwix.org/zim/libretexts/libretexts.org_en_math_2025-01.zim" \
@@ -133,7 +127,7 @@ done
 
 # ─── WIKIPEDIA (Complete Full) ───
 log "=== WIKIPEDIA ==="
-download "https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_maxi_2024-01.zim" "$BASE_DIR/wikipedia" || ((FAILED++))
+download "https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_maxi_2026-02.zim" "$BASE_DIR/wikipedia" || ((FAILED++))
 ((TOTAL++))
 
 # ─── MAPS (All US States) ───
@@ -146,7 +140,7 @@ for state in \
   alabama kentucky mississippi tennessee \
   delaware district_of_columbia florida georgia maryland north_carolina south_carolina virginia west_virginia \
   iowa kansas minnesota missouri nebraska north_dakota south_dakota \
-  illinois indianamichigan ohio wisconsin \
+  illinois indiana michigan ohio wisconsin \
   new_jersey new_york pennsylvania \
   connecticut maine massachusetts new_hampshire rhode_island vermont; do
   ((TOTAL++))
