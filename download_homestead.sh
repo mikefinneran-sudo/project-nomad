@@ -34,7 +34,7 @@ log "=== ENERGY ==="
 for url in \
   "https://download.kiwix.org/zim/other/energypedia_en_all_maxi_2025-12.zim" \
   "https://download.kiwix.org/zim/zimit/solar.lowtechmagazine.com_mul_all_2025-01.zim" \
-  "https://download.kiwix.org/zim/videos/project-fuel_en_2025-09.zim"; do
+  "https://download.kiwix.org/zim/videos/project-fuel_en_all_2026-07.zim"; do
   ((TOTAL++))
   download "$url" "$BASE_DIR/energy" || ((FAILED++))
 done
@@ -44,11 +44,11 @@ for url in \
   "https://download.kiwix.org/zim/other/zimgit-water_en_2024-08.zim" \
   "https://download.kiwix.org/zim/other/appropedia_en_all_maxi_2026-02.zim" \
   "https://download.kiwix.org/zim/other/zimgit-post-disaster_en_2024-05.zim" \
-  "https://download.kiwix.org/zim/stack_exchange/homebrew.stackexchange.com_en_all_2026-02.zim" \
-  "https://download.kiwix.org/zim/zimit/grimgrains_en_all_2026-02.zim" \
-  "https://download.kiwix.org/zim/stack_exchange/sustainability.stackexchange.com_en_all_2026-02.zim" \
+  "https://download.kiwix.org/zim/stack_exchange/homebrew.stackexchange.com_en_all_2026-10.zim" \
+  "https://download.kiwix.org/zim/zimit/grimgrains_en_all_2026-08.zim" \
+  "https://download.kiwix.org/zim/stack_exchange/sustainability.stackexchange.com_en_all_2026-10.zim" \
   "https://download.kiwix.org/zim/other/zimgit-knots_en_2024-08.zim" \
-  "https://download.kiwix.org/zim/stack_exchange/crafts.stackexchange.com_en_all_2026-02.zim"; do
+  "https://download.kiwix.org/zim/stack_exchange/crafts.stackexchange.com_en_all_2026-10.zim"; do
   ((TOTAL++))
   download "$url" "$BASE_DIR/homesteading" || ((FAILED++))
 done
